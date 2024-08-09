@@ -1,0 +1,194 @@
+main {
+    max-width: 800px;
+    margin: 180px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    color:var(--offerproducts-price-text-color);
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: var(--header-color);
+    font-size: 1.5em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 3px solid #0b2f00;
+    color:var(--header-color);
+    font-weight: 600;
+    font-size: 17px;
+}
+
+thead{
+    background-color:var(--ratingstar-color);
+    color: var(--header-color);
+    font-size: 1.5em;
+}
+
+strong{
+    color: #51ac37;
+    font-size: 1.4em;
+}
+
+#customer-details h2{
+    color: var(--offerproducts-price-text-color);
+    font-size: 1.5em;
+}
+
+#customer-details{
+    padding: 10px 10px;
+}
+
+#checkout-total-price {
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--header-color);
+    font-size: 1.1em;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    padding: 10px;
+    border: 2px solid #0b2f00;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color:#51ac37;
+    color:#000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.30s ease;
+}
+
+button[type="submit"]:hover {
+    background-color:var(--ratingstar-color);
+}
+@media (max-width: 768px) {
+    main {
+        margin: 100px auto;
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    th,
+    td {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    thead {
+        font-size: 1.3em;
+    }
+
+    strong {
+        font-size: 1.2em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin: 50px auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    th,
+    td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    thead {
+        font-size: 1.2em;
+    }
+
+    strong {
+        font-size: 1.1em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        padding: 6px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - G store</title>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="icon" type="image/icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/odercon.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./dairyP.html">Dairy Products</a></li>
+                <li><a href="./Vegetables.html">Vegetables</a></li>
+                <li><a href="./Cosmetics.html">Cosmetics</a></li>
+                <li><a href="./index.html">Order</a></li>
+                <li><a href="./Loyalty.html">Loyalty Program</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Checkout</h1>
+        <section id="order-summary">
+            <h2>Your Order</h2>
+            <table id="checkout-order-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th>Quantity(Kg)</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Order items will be displayed here -->
+                </tbody>
+            </table>
+            <strong>Total Price: <span id="total-price">Rs.0.00</span></strong>
+        </section>
+        
+        <section id="customer-details">
+            <h2>Customer Details</h2>
+            <form id="checkout-form" onsubmit="submitOrder(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"  placeholder="Enter Your Name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"  placeholder="Example@gmail.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Contact Number:</label>
+                    <input type="tel" id="phone" name="phone"  placeholder="Enter Your Mobile Number">
+                </div>
+
+                <h2>Delivery Information</h2>
+                
+                <div class="form-group">
+                    <label for="address">Delivery Address:</label>
+                    <input type="text" id="address" name="address"  placeholder="Enter Your Delivery Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="town">Town:</label>
+                    <input type="text" id="town" name="town"  placeholder="Enter Your Town">
+                </div>
+
+                <div class="form-group">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip"  placeholder="Enter ZIP Code">
+                </div>
+                
+                <div class="form-group">
+                    <label for="recoveryAddress">Recovery Delivery Address:</label>
+                    <input type="text" id="recoveryAddress" name="recoveryAddress" placeholder="
+                    Please Enter recovery address">
+                </div>
+
+                <h2>Payment Information</h2>
+                
+                <div class="form-group">
+                    <label for="paymentType">Payment Type:</label>
+                    <select id="paymentType" name="paymentType" required>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="debitCard">Debit Card</option>
+                        <option value="visaCard">Visa Card</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cardName">Card Number:</label>
+                    <input type="text" id="cardName" name="cardName"  placeholder="Enter Your Card Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" >
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv"  placeholder="Enter CVV Number">
+                </div>
+                
+                <button type="submit" class="btn">Checkout</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-info">
+                <h3>About Us</h3>
+                <p>Welcome to G Store, your one-stop destination for all your grocery needs. We offer a wide selection of fresh produce and household essentials to make your shopping experience convenient and enjoyable.</p>
+            </section>
+            <section class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@GSTORE.com</p>
+                <p>Phone: +123 456 789</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </section>
+        </div>
+        <p>&copy; 2024 G Store. All rights reserved.</p>
+   </footer>  
+   <script src="./js/main.js"></script>
+</body>
+</html>
